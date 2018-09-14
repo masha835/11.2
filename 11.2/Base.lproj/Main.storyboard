@@ -139,21 +139,37 @@
         <!--Item-->
         <scene sceneID="OVb-ad-pOX">
             <objects>
-                <viewController id="Yuy-Lf-Rzs" sceneMemberID="viewController">
+                <viewController id="Yuy-Lf-Rzs" customClass="ThirdViewController" customModule="_1_2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XCi-mC-Pin">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="asinastra.png" translatesAutoresizingMaskIntoConstraints="NO" id="EVQ-z8-RcC">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="asinastra.png" translatesAutoresizingMaskIntoConstraints="NO" id="EVQ-z8-RcC">
                                 <rect key="frame" x="78" y="134" width="240" height="200"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="rk2-aY-NPH">
+                                <rect key="frame" x="70" y="483" width="275" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.65242143634655703" blue="0.065738913399303378" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="OP9-6J-3bN" firstAttribute="trailing" secondItem="rk2-aY-NPH" secondAttribute="trailing" constant="30" id="3Cg-Md-KZG"/>
+                            <constraint firstItem="rk2-aY-NPH" firstAttribute="centerX" secondItem="XCi-mC-Pin" secondAttribute="centerX" id="A5m-It-JYN"/>
+                            <constraint firstItem="OP9-6J-3bN" firstAttribute="bottom" secondItem="rk2-aY-NPH" secondAttribute="bottom" constant="6" id="FMu-Tb-6uo"/>
+                            <constraint firstItem="rk2-aY-NPH" firstAttribute="top" secondItem="EVQ-z8-RcC" secondAttribute="bottom" constant="100" id="gvc-qN-2V3"/>
+                            <constraint firstItem="rk2-aY-NPH" firstAttribute="leading" secondItem="OP9-6J-3bN" secondAttribute="leading" constant="70" id="p41-jc-nU5"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="OP9-6J-3bN"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="NIs-CM-AVY"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="textView" destination="rk2-aY-NPH" id="h1k-LD-KSf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g7C-sl-wVU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -162,7 +178,7 @@
         <!--Item-->
         <scene sceneID="P2q-OX-gZF">
             <objects>
-                <viewController id="amz-fU-DeT" sceneMemberID="viewController">
+                <viewController id="amz-fU-DeT" customClass="SecondViewController" customModule="_1_2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="X6u-Pl-f5a">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -227,14 +243,30 @@
                     <view key="view" contentMode="scaleToFill" id="JSS-Ej-PYy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pPs-XZ-h4o">
+                                <rect key="frame" x="8" y="32" width="359" height="578"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="0.99961285570000002" blue="0.28241164629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pPs-XZ-h4o" firstAttribute="top" secondItem="qWw-Tq-6Gk" secondAttribute="top" constant="8" id="K16-tZ-A9v"/>
+                            <constraint firstItem="pPs-XZ-h4o" firstAttribute="centerX" secondItem="JSS-Ej-PYy" secondAttribute="centerX" id="bz1-Dx-3VQ"/>
+                            <constraint firstItem="qWw-Tq-6Gk" firstAttribute="bottom" secondItem="pPs-XZ-h4o" secondAttribute="bottom" constant="8" id="cHo-56-G34"/>
+                            <constraint firstItem="pPs-XZ-h4o" firstAttribute="leading" secondItem="qWw-Tq-6Gk" secondAttribute="leading" constant="8" id="eNN-6d-Q4a"/>
+                            <constraint firstItem="qWw-Tq-6Gk" firstAttribute="trailing" secondItem="pPs-XZ-h4o" secondAttribute="trailing" constant="8" id="ffO-3w-KxZ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="qWw-Tq-6Gk"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="aPB-zE-3FP"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Emq-7H-6gw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-225" y="1065"/>
+            <point key="canvasLocation" x="-226.40000000000001" y="1064.6176911544228"/>
         </scene>
     </scenes>
     <resources>

@@ -8,39 +8,40 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ThirdViewController: UIViewController {
+    
+    @IBOutlet weak var textView: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         print("Первый - \(#function)")
+        textView.text = "Пока ничего неt"
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+        text += "Третий - (#function) \n"
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        print("Первый - \(#function)")
+        text += "Третий - (#function) \n"
     }
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
-        print("Первый - \(#function)")
+        text += "Третий - (#function) \n"
         // Dispose of any resources that can be recreated.
     }
     
     override func viewWillAppear(_ animated: Bool) {
         
         super.viewWillAppear(animated)
-        print("Первый - \(#function)")
+        text += "Третий - (#function) \n"
     }
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        print("Первый - \(#function)")
+        text += "Третий - (#function) \n"
     }
-    
-    
-    
 }

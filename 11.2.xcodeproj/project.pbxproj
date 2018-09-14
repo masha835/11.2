@@ -17,6 +17,8 @@
 		3F7CF84E214BB77100061537 /* anatomi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F7CF84D214BB77100061537 /* anatomi.jpg */; };
 		3F7CF850214BB77400061537 /* rakiii.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F7CF84F214BB77400061537 /* rakiii.jpg */; };
 		3F7CF852214BBBD000061537 /* asinastra.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F7CF851214BBBD000061537 /* asinastra.png */; };
+		3F7CF854214BCD6300061537 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7CF853214BCD6300061537 /* SecondViewController.swift */; };
+		3F7CF856214BD01300061537 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7CF855214BD01300061537 /* ThirdViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		3F7CF84D214BB77100061537 /* anatomi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = anatomi.jpg; sourceTree = "<group>"; };
 		3F7CF84F214BB77400061537 /* rakiii.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rakiii.jpg; sourceTree = "<group>"; };
 		3F7CF851214BBBD000061537 /* asinastra.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asinastra.png; sourceTree = "<group>"; };
+		3F7CF853214BCD6300061537 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		3F7CF855214BD01300061537 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,8 @@
 				3F7CF837214BADAC00061537 /* AppDelegate.swift */,
 				3F7CF839214BADAC00061537 /* ViewController.swift */,
 				3F7CF83B214BADAC00061537 /* Main.storyboard */,
+				3F7CF853214BCD6300061537 /* SecondViewController.swift */,
+				3F7CF855214BD01300061537 /* ThirdViewController.swift */,
 				3F7CF84B214BB76D00061537 /* radts.jpg */,
 				3F7CF84D214BB77100061537 /* anatomi.jpg */,
 				3F7CF851214BBBD000061537 /* asinastra.png */,
@@ -155,7 +161,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F7CF854214BCD6300061537 /* SecondViewController.swift in Sources */,
 				3F7CF83A214BADAC00061537 /* ViewController.swift in Sources */,
+				3F7CF856214BD01300061537 /* ThirdViewController.swift in Sources */,
 				3F7CF838214BADAC00061537 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
